@@ -1,0 +1,158 @@
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(188,230,251,1) 100%);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Pippen', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+#radial {
+    position: relative;
+    z-index: 1;
+    width: 300%;
+    max-width: 300%;
+    top: -150vh;
+    left: -100%;
+}
+.appBody{
+    position: absolute;
+    z-index: 2;
+    top: 0vh;
+}
+img {
+    max-width: 100%;
+}
+.rainbow {
+    background: url('img/rainbow.png') no-repeat calc(50% + 300px) calc(100% + 50px);
+    height: 100vh;
+    width: 100%;
+    background-size: 145%;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.allison-logo {
+    padding: 30px 0px 0px;
+}
+.register {
+    background: url('img/cloudBkgrd.png') no-repeat center center;
+    background-size: contain;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transform: rotate(5deg);
+    text-align: center;
+}
+.register button {
+    font-family: 'Pippen', 'Montserrat', helvetica;
+    font-size: 30px;
+    color: #FFF;
+    padding: 15px;
+    line-height: 30px;
+    border-radius:20px;
+    background-color: orange;
+    border: 3px solid darkorange;
+    text-shadow: 2px 2px darkorange;
+}
+
+.h1kids {
+    color: #7753AB;
+    font-size: 10rem;
+    line-height: 10rem;;
+    margin: 0px;
+}
+.h1about {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-top: -20px;  
+}
+.h1handw {
+    color: #32AEDF;
+}
+.register h1 {
+    position: relative;
+    top: 15%;
+    padding: 30px;
+    text-align: center;
+}
+.register h1 span {
+    display: block;
+}
+.register .askParent {
+    font-size: 15px;
+    font-style: italic;
+    margin: none;
+    padding: none;
+    line-height: 20px;
+    display:block;
+}
+
+/* ----------------- LOGIN ---------------- */
+#login {
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: 30vh;
+}
+#login input {
+    display: inline;
+    width: 35%;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(18,123,170,.5);
+    height: 50px;
+    padding: 15px;
+    font-family: 'Poppins', none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #666;
+}
+#login input:first-child {
+    border-radius: 50px 0px 0px 50px;
+    height: 50px;
+}
+#login button {
+    position: relative;
+    top: -1px;
+    background: #7753AB;
+    height: 50px;
+    border: 3px solid #FFF;
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 900;
+    border-radius: 0px 50px 50px 0px;
+    color: #FFF;
+    font-family: 'Poppins', none;
+    text-align: center;
+    width: 20%;
+}
+
+/* ----------- APP FOOTER ----------------------- */
+
+.appFooter {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background: #3aafdc;
+    height: 60px;
+    bottom: 0px;
+    text-align: center;
+    color: #FFF;
+    border-top: 5px solid #FFF;
+}
+.appFooter p {
+    line-height: 55px;
+}
+
+/* ---------- ARC TEXT ---------------------- */
+
+
+@media screen and (min-width: 960px) {
+    .mbl-only {display: none;}
+}
+@media screen and (max-width: 960px) {
+    .mbl-only {display: inline-block;}
+}
