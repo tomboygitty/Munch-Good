@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="primaryBkgrd">
+        <img id="radial" src="img/radial.png" />
+    </div>
+    <div class="container-fluid appBody">
+        <div class="row">
+        <div class="col-md-4">
+            <!-- spacer -->
+        </div>
+        <div class="col-md-4 registerForm">
+            <form class="border border-light p-5">
+                <img class="register-logo" src="img/logoNallison.png" alt="Allison the health-conscious unicorn" />
+                <p class="h4 mb-4 text-center">Register / Create Account</p>
+                <input type="text" id="usernameNew" class="form-control mb-4" placeholder="Username &ndash; what can we call you?">
+                <input type="password" id="registerPass" class="form-control mb-4" placeholder="Password &ndash; make it good!">
+                <input type="password" id="registerPassConfirm" class="form-control mb-4" placeholder="Confirm Password &ndash; just to be sure.">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Check this box if you're over 13.</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+                
+
+                <button class="btn btn-info btn-block my-4 registerSubmit" type="submit"><a href="welcome.html">Sign in</a></button>
+
+                <div class="text-center">
+                    <p>Not a member?
+                        <a href="">Register</a>
+                    </p>
+
+                    <p>or sign in with:</p>
+                    <a type="button" class="light-blue-text mx-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <!-- spacer -->
+        </div>
+        </div>
+    </div>
+    <div class="appFooter">
+        <p class="footerLinks" id="arcText">
+            developed by <a href="#"><b>team</b>awesomest</a> | view the <a href="#">github repo</a>
+        </p>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/domjs.js"></script>
+    <script src="js/jquery.arctext.js"></script>
+</body>
+</html>

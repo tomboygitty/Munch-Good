@@ -19,3 +19,10 @@ let arcText = document.getElementsByClassName('h1blackDescriptive')[0].innerHTML
 
 console.log(arcText); 
 
+
+// PREVENT SUBMIT PAGE RELOAD
+
+document.querySelector(".registerSubmit").addEventListener("click", function(event) {
+         event.preventDefault();
+}, false);
+
