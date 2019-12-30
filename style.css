@@ -192,6 +192,12 @@ form.border.border-light.p-5 {
     background: #9087C2;
 }
 
+.food-items {
+    height: 200px;
+    background-size: contain !important;
+    border: 10px transparent solid;
+}
+
 /* ----------- APP FOOTER ----------------------- */
 
 .appFooter {
