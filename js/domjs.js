@@ -28,8 +28,8 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
 
     items.push( 
 
-      "<div class=\"col-md-1 food-items\" id=\"" + key + "\"" + "style=\"background: no-repeat center center url(\'" + imgURL + "\')\">" + 
-      val.calories, val.carbs, val.protien, val.fat, val.img +
+      "<div class=\"col-md-3 food-items\" id=\"" + key + "\"" + "style=\"background: no-repeat center center url(\'" + imgURL + "\')\">"
+      + // val.calories, val.carbs, val.protien, val.fat, val.img +
       "</div>" 
       
       );
