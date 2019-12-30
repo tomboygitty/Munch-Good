@@ -14,15 +14,19 @@ function step() {
 window.requestAnimationFrame(step);
 
 
-let arcElement = document.getElementsByClassName('h1blackDescriptive');
-let arcText = document.getElementsByClassName('h1blackDescriptive')[0].innerHTML;
-
-console.log(arcText); 
-
-
 // PREVENT SUBMIT PAGE RELOAD
 
-document.querySelector(".registerSubmit").addEventListener("click", function(event) {
-         event.preventDefault();
-}, false);
 
+// JSON call -------------- //
+
+$.getJSON( "../Final-Project/data/foods.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});

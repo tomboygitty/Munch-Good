@@ -3,7 +3,7 @@ body {
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(188,230,251,1) 100%);
     position: relative;
     overflow: hidden;
-    font-family: 'Pippen', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 #radial {
     position: relative;
@@ -45,7 +45,7 @@ img {
     text-align: center;
 }
 .register button {
-    font-family: 'Pippen', 'Montserrat', helvetica;
+    font-family: 'Poppins', 'Montserrat', helvetica;
     font-size: 30px;
     color: #FFF;
     padding: 15px;
@@ -129,6 +129,13 @@ img {
     text-align: center;
     width: 20%;
 }
+.small-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+    display:block;
+}
 /* -- REGISTER ---------------------------------- */
 form.border.border-light.p-5 {
     background: rgba(255,255,255,0.7);
@@ -142,6 +149,47 @@ form.border.border-light.p-5 {
     z-index: 3;
     margin-bottom: -200px;
     top: -200px;
+}
+
+/* -- WELCOME ----------------------------------- */
+.welcomeBkgrd {
+    background: url('img/allisonNhill.png') center bottom no-repeat;
+    height: 100vh;
+}
+.welcomeBtns .col-md-6 {
+    height: 150px;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 30px rgba(18,123,170,.5) ;
+    border-radius: 200px;
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+    margin: 2.5%;
+    flex-basis: 45%;
+}
+.welcomeBtns .col-md-6 > a {
+    color: #FFF;
+}
+.welcomeBtns h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    padding-top: 15px;
+    font-style: italic;
+}
+.play-btn {
+    background: #F8735B;
+}
+.my-btn {
+    background: #90D9FA;
+}
+.healthy-btn {
+    background: #FCA300;
+}
+.story-btn {
+    background: #9087C2;
 }
 
 /* ----------- APP FOOTER ----------------------- */
