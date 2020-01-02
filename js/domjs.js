@@ -46,6 +46,8 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
   }).appendTo( ".interactive" );
   
   let fatMeter = [];
+  let proMeter = [];
+  let carbMeter = [];
 
   $(".foodItem").on('click', function(){
     
@@ -73,20 +75,26 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
 
     
     fatMeter.push(fatValue);
+    proMeter.push(proValue);
+    carbMeter.push(carbValue);
     
-
 var cumFat = 0;
+var cumCarb = 0;
+var cumProtien = 0;
 
 for(var i = 0; i < fatMeter.length; i++){
-
-  cumFat += fatMeter[i]
+  cumFat += fatMeter[i];
+  cumCarb += carbMeter[i];
+  cumProtien += proMeter[i];
 }
 
-console.log('Your sum is ' + cumFat);
-
-
+console.log('Your fat total is ' + cumFat);
+console.log('Your carb total is ' + cumCarb);
+console.log('Your protien total is ' + cumProtien);
 
     $('.fatMeter').css('width', cumFat + "px")
+    $('.carbMeter').css('width', cumCarb + "px")
+    $('.proMeter').css('width', cumProtien + "px")
 
     if (carbValue > proValue && carbValue > fatValue) {
       $('.mainMacro').text('ENERGY!');
