@@ -44,7 +44,9 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
     "class": "foodItems row",
     html: items.join( "" )
   }).appendTo( ".interactive" );
-  //console.log(data.foods[3].calories + items);
+  
+  let fatMeter = [];
+
   $(".foodItem").on('click', function(){
     
     let thisFood = document.getElementsByClassName('foodItem');
@@ -58,11 +60,51 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
     let thisProtien = foodSelect.attr('protien')
     let thisFat = foodSelect.attr('fat')
 
+    const fatValue = thisFat * 9;
+    const carbValue = thisCarbs * 4;
+    const proValue = thisProtien * 4;
+
+    $('.foodEaten').text(clickedFood);
+
+    let chime = document.getElementById('chimeSound');
+
+    chime.play();
+    chime.playbackRate = 2.5;
+
+    
+    fatMeter.push(fatValue);
+    
+
+var cumFat = 0;
+
+for(var i = 0; i < fatMeter.length; i++){
+
+  cumFat += fatMeter[i]
+}
+
+console.log('Your sum is ' + cumFat);
+
+
+
+    $('.fatMeter').css('width', cumFat + "px")
+
+    if (carbValue > proValue && carbValue > fatValue) {
+      $('.mainMacro').text('ENERGY!');
+    }
+    else if (proValue > carbValue && proValue > fatValue){
+      $('.mainMacro').text('GROWTH!');
+    }
+    else {
+      $('.mainMacro').text('SKIN & ORGAN HEALTH!');
+    }
+    
+
     console.log("FOOD: " + clickedFood)
     console.log("-- Carbs => " + thisCarbs)
     console.log("-- Protien => " + thisProtien)
     console.log("-- Fat => " + thisFat)
     console.log("Total Calories => " + thisCal)
+
 });
 }); 
 

@@ -34,20 +34,26 @@
                 <div class="col-md-4 interactive">
 <!-- THIS DIV IS USED TO HOUSE THE APP BUTTONS (SEE DOMJS.JS) -->
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 actionWrap">
+                    <h3>You just fed Allison: <br/><span class="foodEaten"></span></h3>
+                    <h4>It's provides a boost to <br/> <span class="mainMacro"></span></h4>
 <!-- spacer ------------------------------------------------- -->                    
                 </div>
                 <div class="col-md-4 stats">
                     <h1>Current Mood: <span id="mood"></span> Riffic!</h1>
                     <h2>Stats</h2>
-                    <ul class="statistics">
-                        <li>Calories Eaten Today: <span id="currCal"></span></li>
-                        <li><i>Total</i> Calories Eaten: <span id="totalCal"></span></li>
-                        <li>Protien Eaten Today: <span id="currPro"></span></li>
-                        <li>Fat Eaten Today: <span id="currFat"></span></li>
-                        <li>Carbohydrates Eaten Today: <span id="currCarb"></span></li>
-                    </ul>
-                    
+                    <div class="macroStats column">
+                        <div class="col-md-12 carbStat">
+                            <div class="carbMeter">
+                            </div>
+                        </div>
+                        <div class="col-md-12 proStat">
+                            <div class="proMeter"></div>
+                        </div>
+                        <div class="col-md-12 fatStat">
+                            <div class="fatMeter"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,5 +65,8 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/domjs.js"></script>
+    <audio id="chimeSound">
+        <source src="mp3/Magic Wand Noise-SoundBible.com-375928671.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>

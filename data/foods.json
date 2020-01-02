@@ -2,7 +2,7 @@
 {
     "foods": [
     {
-        "food": "Roll",
+        "food": "Bread",
         "img": "img/f_roll.png",
         "calories": 90,
         "carbs": 15, 
@@ -10,14 +10,14 @@
         "fat": 1
     },
     {
-        "food": "Salty Snack",
+        "food": "Snack",
         "img": "img/f_salty.png",
         "calories": 140,
         "carbs": 25,
         "protien": 3, 
         "fat": 3
     },{
-        "food": "Muffin / Cake",
+        "food": "Cake",
         "img": "img/f_cake.png",
         "calories": 300,
         "carbs": 46,
@@ -36,9 +36,9 @@
         "calories": 90,
         "carbs": 1,
         "protien": 23, 
-        "fat": 3
+        "fat": 1
     },{
-        "food": "Bacon / Ham",
+        "food": "Pork",
         "img": "img/f_pork.png",
         "calories": 128,
         "carbs": 2,
@@ -52,7 +52,7 @@
         "protien": 23,
         "fat": 14
     },{
-        "food": "Hot Dog",
+        "food": "Hotdog",
         "img": "img/f_hotdog.png",
         "calories": 381,
         "carbs": 26, 
@@ -66,14 +66,14 @@
         "protien": 14,
         "fat": 12
     },{
-        "food": "Green Veggies",
+        "food": "Veggies",
         "img": "img/f_veggies.png",
         "calories": 36,
         "carbs": 7,
         "protien": 2, 
         "fat": 0
     },{
-        "food": "Fresh Fruit",
+        "food": "Fruit",
         "img": "img/f_fruit.png",
         "calories": 90,
         "carbs": 15, 
@@ -87,21 +87,21 @@
         "protien": 6, 
         "fat": 7
     },{
-        "food": "Fruity Snack",
+        "food": "Fruity-Snack",
         "img": "img/f_fruity.png",
         "calories": 80,
         "carbs": 15,
         "protien": 3,
         "fat": 1
     },{
-        "food": "Donut / Pastry",
+        "food": "Pastry",
         "img": "img/f_pastry.png",
         "calories": 291,
         "carbs": 36,
         "protien": 4,
         "fat": 14
     },{
-        "food": "Ice Cream",
+        "food": "Ice-Cream",
         "img": "img/f_icecream.png",
         "calories": 170,
         "carbs": 27,
