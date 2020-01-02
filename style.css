@@ -191,14 +191,17 @@ form.border.border-light.p-5 {
 .story-btn {
     background: #9087C2;
 }
+
+/* -- PLAY PAGE -------------------------------- */
 .interactive, .stats {
     background: rgba(255,255,255,.25);
     border-radius: 20px;
     border: 3px solid #FFF;
     padding: 20px 20px 20px 40px;
+    box-shadow: 0px 10px 30px rgba(18,123,170,.5);
 }
 
-.food-items {
+.foodItem {
     height: 120px;
     background-size: contain !important;
     border: 10px transparent solid;

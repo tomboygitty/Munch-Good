@@ -24,11 +24,16 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
 
   $.each( data.foods, function( key, val ) {
 
-    let imgURL = val.img;
+    let food = val.food;
+    let img = val.img;
+    let cal = val.calories;
+    let carb = val.carbs;
+    let fat = val.fat;
+    let protien = val.protien;
 
     items.push( 
 
-      "<div class=\"col-md-3 food-items\" id=\"" + key + "\"" + "style=\"background: no-repeat center center url(\'" + imgURL + "\')\">"
+      "<div class=\"col-md-3 foodItem\" id=\"" + key + "\"" + "style=\"background: no-repeat center center url(\'" + img + "\')\" calories=" + cal + " carbs=" + carb + " protien=" + protien + " fat=" + fat + " food=" + food + ">"
       + // val.calories, val.carbs, val.protien, val.fat, val.img +
       "</div>" 
       
@@ -36,8 +41,29 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
   });
  
   $( "<div/>", {
-    "class": "food-items, row",
+    "class": "foodItems row",
     html: items.join( "" )
   }).appendTo( ".interactive" );
-  console.log(data.foods[3].calories + items);
+  //console.log(data.foods[3].calories + items);
+  $(".foodItem").on('click', function(){
+    
+    let thisFood = document.getElementsByClassName('foodItem');
+    //let thisCal = thisFood.getAttribute('carbs');
+
+    const foodSelect = $((this), thisFood);
+
+    let clickedFood = foodSelect.attr('food')
+    let thisCal = foodSelect.attr('calories')
+    let thisCarbs = foodSelect.attr('carbs')
+    let thisProtien = foodSelect.attr('protien')
+    let thisFat = foodSelect.attr('fat')
+
+    console.log("FOOD: " + clickedFood)
+    console.log("-- Carbs => " + thisCarbs)
+    console.log("-- Protien => " + thisProtien)
+    console.log("-- Fat => " + thisFat)
+    console.log("Total Calories => " + thisCal)
+});
 }); 
+
+
