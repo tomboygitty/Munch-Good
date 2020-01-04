@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import Users from './components/Users'
+import Contact from './components/Contact'
+import {Route, BrowserRouter, Link}from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -23,6 +26,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <BrowserRouter>
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={Users} />
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
@@ -51,7 +57,10 @@ class App extends React.Component {
                     <span className="h1handw">health <br className="mbl-only" />+<br className="mbl-only" /> wellness</span>
                   </h1>       
                   <br />    
-                  <a href="register.html"><button>REGISTER!<br /><span className="askParent">kids, ask a parent!</span></button></a>
+                
+                   <Link to='/portfolio'><button>REGISTER!<br/><span class="askParent">kids, ask a parent!</span></button></Link>
+                   
+                
                 </div>
               </div>
               <div className="row">
@@ -69,9 +78,10 @@ class App extends React.Component {
           </div>
           <div className="appFooter">
             <p className="footerLinks" id="arcText">
-              developed by <b>team</b>awesomest| view the github repo
+              developed by <Link to='/portfolio'><b>team</b>awesomest</Link>| view the <Link to='/portfolio'>github repo</Link>
             </p>
           </div>
+           </BrowserRouter>
         </div>
     );
   }
