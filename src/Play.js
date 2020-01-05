@@ -21,7 +21,7 @@ class Play extends React.Component {
               {/* spacer */}
             </div>
             <div className="col-md-4">
-              <a href="index.html">
+              <a href="/">
                 <img className="small-logo" src={require('./img/logo.png')} alt="Allison the Health-conscious Unicorn" />
               </a>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import Login from '../../components/Login'
+import Login from '../Register'
 import Register from '../../components/home/Register'
 
 class Rainbow extends React.Component {

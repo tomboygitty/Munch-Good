@@ -8,11 +8,9 @@ class HomeAppBody extends React.Component {
   render() {
     return (
         <>
-         
           <Rainbow />
-        <Radial /> 
-        
-           <div className="container-fluid appBody">
+          <Radial /> 
+          <div className="container-fluid appBody">
           </div>
           <div className="appFooter">
             <p className="footerLinks" id="arcText">
