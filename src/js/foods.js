@@ -1,24 +1,5 @@
-const refreshRate = 1000 / 60;
-const maxXPosition = 180;
-let rect = document.getElementById('radial');
-let speedX = 1 / 10;
-let positionX = 0;
-function step() {
-  positionX = positionX + speedX;
-  if (positionX > maxXPosition || positionX < 0) {
-    speedX = speedX * (-1);
-    console.log('SUCCESS ++++++++++++++++++++++ ')
-  }
-  rect.style.transform = 'rotate(' + positionX + 'deg)';
-  window.requestAnimationFrame(step);
-}
-window.requestAnimationFrame(step);
 
-
-// PREVENT SUBMIT PAGE RELOAD
-
-
-// JSON call -------------- //
+export function Json() {
 
 $.getJSON( "../Final-Project/data/foods.json", function( data ) {
   var items = [];
@@ -34,7 +15,7 @@ $.getJSON( "../Final-Project/data/foods.json", function( data ) {
 
     items.push( 
 
-      "<div class=\"col-md-3 foodItem\" id=\"" + key + "\"style=\"background: no-repeat center center url(\'" + img + "\')\" calories=" + cal + " carbs=" + carb + " protien=" + protien + " fat=" + fat + " food=" + food + ">"
+      "<div class=\"col-md-3 foodItem\" id=\"" + key + "\"" + "style=\"background: no-repeat center center url(\'" + img + "\')\" calories=" + cal + " carbs=" + carb + " protien=" + protien + " fat=" + fat + " food=" + food + ">"
       + // val.calories, val.carbs, val.protien, val.fat, val.img +
       "</div>" 
       
@@ -117,4 +98,6 @@ console.log('Your protien total is ' + cumProtien);
 });
 }); 
 
+}
 
+export default Foods;
