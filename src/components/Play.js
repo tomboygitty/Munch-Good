@@ -4,7 +4,7 @@ class Play extends React.Component {
   render() {
     return (
       <>
-    <h1>MAIN PLAY</h1>
+    <h1>Butts</h1>
     <h1>Butts</h1>
     <h1>Butts</h1>
     <h1>Butts</h1>

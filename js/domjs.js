@@ -7,6 +7,7 @@ function step() {
   positionX = positionX + speedX;
   if (positionX > maxXPosition || positionX < 0) {
     speedX = speedX * (-1);
+    console.log('SUCCESS ++++++++++++++++++++++ ')
   }
   rect.style.transform = 'rotate(' + positionX + 'deg)';
   window.requestAnimationFrame(step);
