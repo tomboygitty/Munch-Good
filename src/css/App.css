@@ -215,8 +215,8 @@ form.border.border-light.p-5 {
 }
 
 .foodItem {
-    height: 120px;
-    background-size: contain !important;
+    max-width: 100%;
+    height: auto;
     border: 10px transparent solid;
 }
 

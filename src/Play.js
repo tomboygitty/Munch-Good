@@ -1,4 +1,6 @@
 import React from 'react'
+import FoodList from './data/FoodList'
+
 import '../src/index.css';
 import './css/App.css';
 import './css/bootstrap.css';
@@ -6,12 +8,6 @@ import './css/fonts.css';
 
 
 class Play extends React.Component {
-  
-  componentDidMount() { 
-    
-  
-      
-  }
   
   render() {    
     return (
@@ -38,6 +34,7 @@ class Play extends React.Component {
             <div className="row">
               <div className="col-md-4 interactive">
                 {/* THIS DIV IS USED TO HOUSE THE APP BUTTONS (SEE DOMJS.JS) */}
+                <FoodList key="0" />
               </div>
               <div className="col-md-4 actionWrap">
                 <h3>You just fed Allison: <br /><span className="foodEaten" /></h3>
