@@ -9,7 +9,7 @@ class Login extends React.Component {
         <div className="col-md-3 spacer">
         </div>
         <div className="col-md-6">
-            <form id="login">
+            <form id="login" action="/welcome">
             <input placeholder="Username" />
             <input placeholder="Password" />
             <button type="submit"> LOGIN </button>
