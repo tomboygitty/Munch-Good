@@ -1,0 +1,13 @@
+
+{
+    "users": [
+    {
+        "username": "Stephen",
+        "password": "password",
+        "currCals": 0,
+        "currCarbs": 0, 
+        "currPro": 0,
+        "currFat": 0
+    }
+    ]
+}

@@ -1,0 +1,361 @@
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(188,230,251,1) 100%);
+    position: relative;
+    font-family: 'Poppins', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'riffic_freebold', 'Monteserrat', Arial, Helvetica, sans-serif;
+}
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 100%;
+}
+#radial {
+    position: relative;
+    z-index: -1;
+    width: 200%;
+    max-width: 300%;
+    top: -170vh;
+    left: -50%;
+}
+.appBody{
+    position: absolute;
+    z-index: 2;
+    top: 0vh;
+}
+img {
+    max-width: 100%;
+}
+.rainbow {
+    background: url('../img/rainbow.png') no-repeat calc(50% + 300px) calc(100% + 50px);
+    height: 100vh;
+    width: 100%;
+    background-size: 145%;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.allison-logo {
+    padding: 30px 0px 0px;
+}
+.register {
+    background: url('../img/cloudBkgrd.png') no-repeat center center;
+    background-size: contain;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    font-family: 'riffic_freebold', 'Yanone Kaffeesatz', sans-serif;
+    transform: rotate(2deg);
+    text-align: center;
+}
+.register button {
+    font-family: 'riffic_freebold', 'Poppins', 'Montserrat', helvetica;
+    font-size: 30px;
+    color: #FFF;
+    padding: 10px 50px;
+    line-height: 30px;
+    border-radius:20px;
+    background-color: orange;
+    border: 3px solid darkorange;
+    text-shadow: 2px 2px darkorange;
+    margin-top: -20px;
+}
+.h1blackDescriptive {
+    font-size: 30px;
+    line-height: 45px;
+    padding-top: 25px;
+}
+.h1kids {
+    color: #7753AB;
+    font-size: 10rem;
+    line-height: 12rem;;
+    margin: 0px;
+}
+.h1about {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-top: -20px;  
+}
+.h1handw {
+    color: #32AEDF;
+}
+.register h1 {
+    position: relative;
+    top: 15%;
+    padding: 30px 20px 0px;
+    text-align: center;
+}
+.register h1 span {
+    display: block;
+}
+.register .askParent {
+    font-size: 15px;
+    font-style: italic;
+    margin: none;
+    padding: none;
+    line-height: 20px;
+    display:block;
+}
+
+/* ----------------- LOGIN ---------------- */
+#login {
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: 30vh;
+}
+#login input {
+    display: inline;
+    width: 35%;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(18,123,170,.5);
+    height: 50px;
+    padding: 15px;
+    font-family: 'riffic_freebold', 'Poppins', none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #666;
+    margin-right: 7px;
+}
+#login input:first-child {
+    border-radius: 50px 0px 0px 50px;
+    height: 50px;
+}
+#login button {
+    position: relative;
+    top: -1px;
+    background: #7753AB;
+    height: 50px;
+    border: 3px solid #FFF;
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 900;
+    border-radius: 0px 50px 50px 0px;
+    color: #FFF;
+    font-family: 'riffic_freebold', 'Poppins', none;
+    text-align: center;
+    width: 20%;
+}
+.small-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+    display:block;
+}
+/* -- REGISTER ---------------------------------- */
+form.border.border-light.p-5 {
+    background: rgba(255,255,255,0.7);
+    margin-top: 150px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(18,123,170,.5);
+}
+.register-logo {
+    position: relative;
+    z-index: 3;
+    margin-bottom: -200px;
+    top: -200px;
+}
+.border-light {
+  padding: 20px;
+}
+.border-light p.h4 {
+  margin-bottom: 20px;
+  font-family: 'riffic_freebold','Montserrat',helvetica;
+  text-transform: uppercase;
+  font-size: 30px;
+  
+}
+.border-light input {
+  margin: 20px 0px;
+  max-width: calc(100%);
+  font-family: 'riffic_freebold', 'Montserrat', helvetica;
+  font-size: 20px;
+}
+.border-light label {
+  font-family: 'riffic_freebold', 'Montserrat',helvetica;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+.border-light button {
+  width: calc(100%);
+  font-family: 'riffic_freebold','Montserrat',helvetica;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+  font-size: 25px;
+  border-radius: 10px;
+  border: 3px solid #FFF;
+  box-shadow: -2px 4px 0px rgba(0,0,0,0.25);
+  transition: all .25s ease .125s;
+    }
+    .border-light button:hover {
+        box-shadow: none;
+    }
+
+/* -- WELCOME ----------------------------------- */
+.welcomeBkgrd {
+    background: url('../img/allisonNhill.png') center bottom no-repeat;
+    height: 100vh;
+}
+.welcomeBtns .col-md-6 {
+    height: 150px;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 30px rgba(18,123,170,.5) ;
+    border-radius: 200px;
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+    margin: 2.5%;
+    flex-basis: 45%;
+}
+.welcomeBtns .col-md-6 > a {
+    color: #FFF;
+}
+.welcomeBtns h1 {
+    font-family: 'riffic_freebold', 'Poppins', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    padding-top: 15px;
+    font-style: italic;
+}
+.play-btn {
+    background: #F8735B;
+}
+.my-btn {
+    background: #90D9FA;
+}
+.healthy-btn {
+    background: #FCA300;
+}
+.story-btn {
+    background: #9087C2;
+}
+
+/* -- PLAY PAGE -------------------------------- */
+.interactive, .stats {
+    background: rgba(255,255,255,.25);
+    border-radius: 20px;
+    border: 3px solid #FFF;
+    padding: 20px 20px 20px 40px;
+    box-shadow: 0px 10px 30px rgba(18,123,170,.5);
+}
+
+.foodItem {
+    max-width: 100%;
+    height: auto;
+    border: 10px transparent solid;
+}
+
+.status h4 {
+  color: #000;
+  font-family: 'Yanone Kaffeesatz';
+  position: relative;
+  left: 50px;
+  top: 10px;
+  width: 200px;
+}
+.status h4 span {
+  color: #069;
+  background: rgba(255,255,255,1);
+  padding: 10px;
+  position: relative;
+  left: -70px;
+  top: -30px;
+  border-radius: 30px;
+  border: 2px solid #069;
+  font-size: 36px;
+}
+/* ----------- APP FOOTER ----------------------- */
+
+.appFooter {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background: #3aafdc;
+    height: 60px;
+    bottom: 0px;
+    text-align: center;
+    color: #FFF;
+    border-top: 5px solid #FFF;
+}
+.appFooter p {
+    line-height: 55px;
+}
+
+/* ---------- ACTION TEXT ---------------------- */
+.actionWrap {
+    text-align: center;
+    background: rgba(255,255,255,.4);
+    border-radius: 25px;
+    border: 20px transparent solid;
+    padding: 20px;
+}
+.actionWrap h3 span{
+    font-weight: 900;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #3aafdc;
+    -webkit-text-fill-color: #3aafdc; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    letter-spacing: -3px;
+    -webkit-text-stroke-color: #FFF;
+    text-shadow: 0px 10px 20px rgba(18,123,170,.5);
+}
+.actionWrap h4 span{
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #7753AB;
+    text-shadow: 0px 0px 10px #FFF;
+    transform: skewY(5deg);
+}
+
+.macroStats .carbStat, .macroStats .proStat, .macroStats .fatStat {
+    height: 65px;
+    border: 2.5px #FFF solid;
+    width: calc(100% - 60px);
+    margin: 20px;
+    border-radius: 10px;
+    background: rgba(18,123,170,.5);
+}
+.carbMeter, .fatMeter, .proMeter {
+    height: 65px;
+    width: 0px;
+    border-radius: 10px;
+    border: 3px solid #FFF;
+    position: relative;
+    left: -17px;
+    top: -2.5px;
+    transition: all .5s ease .125s;
+    max-width: calc(100% + 35px);
+}
+.carbMeter {
+    background: #F8735B;
+}
+.proMeter {
+    background: #9087C2;
+}
+.fatMeter {
+    background: #32AEDF;
+}
+
+
+
+
+@media screen and (min-width: 960px) {
+    .mbl-only {display: none;}
+}
+@media screen and (max-width: 960px) {
+    .mbl-only {display: inline-block;}
+}
