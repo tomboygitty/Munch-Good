@@ -59,6 +59,10 @@ console.log('Your protien total is ' + cumProtien);
     $('.carbMeter').css('width', cumCarb + "px")
     $('.proMeter').css('width', cumProtien + "px")
 
+    $('#fatStat').html(cumFat)
+    $('#proStat').html(cumProtien)
+    $('#carbStat').html(cumCarb)
+
     if (carbValue > proValue && carbValue > fatValue) {
       $('.mainMacro').text('ENERGY!');
     }

@@ -12,7 +12,7 @@ class Register extends React.Component {
                     <span className="h1handw">health <br className="mbl-only" />+<br className="mbl-only" /> wellness</span>
                 </h1>       
                 <br />    
-                <Link to='/play'><button>REGISTER!<br/><span className="askParent">kids, ask a parent!</span></button></Link>
+                <Link to='/registration'><button>REGISTER!<br/><span className="askParent">kids, ask a parent!</span></button></Link>
             </div>
         )
     }

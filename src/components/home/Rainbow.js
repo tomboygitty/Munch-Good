@@ -1,7 +1,8 @@
 import React from 'react'
 // Components
-import Login from '../Register'
+import Login from '../../components/home/Login'
 import Register from '../../components/home/Register'
+import Spacer4 from '../../components/shared/Spacer4'
 
 class Rainbow extends React.Component {
   render() {
@@ -12,9 +13,7 @@ class Rainbow extends React.Component {
               <div className="col-md-4">
                 <img className="allison-logo" src={require('./../../img/logo.png')} alt="Allison, the health-conscious, marginally annoying unicorn" />
               </div>
-              <div className="col-md-4 spacer">
-                {/* spacer */}
-              </div>
+              <Spacer4 />
               <Register />
             </div>
             <Login />

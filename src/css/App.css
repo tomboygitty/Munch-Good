@@ -61,7 +61,7 @@ img {
     background-color: orange;
     border: 3px solid darkorange;
     text-shadow: 2px 2px darkorange;
-    margin-top: -50px;
+    margin-top: -20px;
 }
 .h1blackDescriptive {
     font-size: 30px;
@@ -163,6 +163,43 @@ form.border.border-light.p-5 {
     margin-bottom: -200px;
     top: -200px;
 }
+.border-light {
+  padding: 20px;
+}
+.border-light p.h4 {
+  margin-bottom: 20px;
+  font-family: 'riffic_freebold','Montserrat',helvetica;
+  text-transform: uppercase;
+  font-size: 30px;
+  
+}
+.border-light input {
+  margin: 20px 0px;
+  max-width: calc(100%);
+  font-family: 'riffic_freebold', 'Montserrat', helvetica;
+  font-size: 20px;
+}
+.border-light label {
+  font-family: 'riffic_freebold', 'Montserrat',helvetica;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+.border-light button {
+  width: calc(100%);
+  font-family: 'riffic_freebold','Montserrat',helvetica;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+  font-size: 25px;
+  border-radius: 10px;
+  border: 3px solid #FFF;
+  box-shadow: -2px 4px 0px rgba(0,0,0,0.25);
+  transition: all .25s ease .125s;
+    }
+    .border-light button:hover {
+        box-shadow: none;
+    }
 
 /* -- WELCOME ----------------------------------- */
 .welcomeBkgrd {
@@ -220,6 +257,25 @@ form.border.border-light.p-5 {
     border: 10px transparent solid;
 }
 
+.status h4 {
+  color: #000;
+  font-family: 'Yanone Kaffeesatz';
+  position: relative;
+  left: 50px;
+  top: 10px;
+  width: 200px;
+}
+.status h4 span {
+  color: #069;
+  background: rgba(255,255,255,1);
+  padding: 10px;
+  position: relative;
+  left: -70px;
+  top: -30px;
+  border-radius: 30px;
+  border: 2px solid #069;
+  font-size: 36px;
+}
 /* ----------- APP FOOTER ----------------------- */
 
 .appFooter {

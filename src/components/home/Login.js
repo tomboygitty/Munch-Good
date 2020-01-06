@@ -1,6 +1,7 @@
+// Standard React import to make this a React Component
 import React from 'react';
 
-
+// THIS COMPONENT - Login form row with Username Password and submit
 class Login extends React.Component {
   render() {
     return (
