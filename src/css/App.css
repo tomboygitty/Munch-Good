@@ -3,6 +3,7 @@ body {
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(188,230,251,1) 100%);
     position: relative;
     font-family: 'Poppins', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 h1 {
     font-family: 'riffic_freebold', 'Monteserrat', Arial, Helvetica, sans-serif;
@@ -254,9 +255,14 @@ form.border.border-light.p-5 {
 .foodItem {
     max-width: 100%;
     height: auto;
-    border: 10px transparent solid;
-}
-
+    margin-bottom: 15px;
+    transition: all .25s;
+    position: relative;
+    top: 0px;
+    }
+    .foodItem:hover {
+        top: -15px;
+    }
 .status h4 {
   color: #000;
   font-family: 'Yanone Kaffeesatz';
