@@ -12,6 +12,10 @@ app.get('/api/greeting', (req, res) => {
   res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
 });
 
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
+
 app.listen(3001, () =>
   console.log('Express server is running on localhost:3001')
 );
