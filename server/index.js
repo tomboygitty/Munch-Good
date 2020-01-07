@@ -6,6 +6,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(pino);
 
+const PORT = process.env.PORT || 3001;
+
 app.get('/api/greeting', (req, res) => {
   const name = req.query.name || 'World';
   res.setHeader('Content-Type', 'application/json');
@@ -16,6 +18,6 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-app.listen(3001, () =>
+app.listen(PORT, () =>
   console.log('Express server is running on localhost:3001')
 );
