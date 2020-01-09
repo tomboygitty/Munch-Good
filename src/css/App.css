@@ -356,7 +356,24 @@ form.border.border-light.p-5 {
     background: #32AEDF;
 }
 
-
+.actionWrap h3 span.foodEaten {
+  font-size: 10rem;
+  font-family: 'riffic_freebold';
+  letter-spacing: -4px;
+}
+.actionWrap h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 4rem;
+}
+.actionWrap h4 {
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 3rem;
+}
+.actionWrap span.mainMacro {
+  font-size: 8rem;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgba(255,255,255,0.3);
+}
 
 
 @media screen and (min-width: 960px) {
