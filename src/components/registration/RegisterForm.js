@@ -10,7 +10,7 @@ class RegisterForm extends React.Component {
                 <p className="h4 mb-4 text-center">Register / Create Account</p>
                 <input type="text" id="usernameNew" className="form-control mb-4" placeholder="Username – what can we call you?" />
                 <input type="password" id="registerPass" className="form-control mb-4" placeholder="Password – make it good!" />
-                <input type="password" id="registerPassConfirm" className="form-control mb-4" placeholder="Confirm Password – just to be sure." />
+                {/* <input type="password" id="registerPassConfirm" className="form-control mb-4" placeholder="Confirm Password – just to be sure." />
                 <div className="d-flex justify-content-between">
                     <div>
                     <div className="custom-control custom-checkbox">
@@ -19,7 +19,7 @@ class RegisterForm extends React.Component {
                     </div>
                     </div>
                 </div>
-                <br />
+                <br /> */}
                 <input type="email" id="defaultLoginFormEmail" className="form-control mb-4" placeholder="E-mail" />
                 <button className="btn btn-info btn-block my-4 registerSubmit" type="submit" onclick="window.location.href = '/welcome'">Register!</button>
                 </form>
