@@ -54,9 +54,9 @@ console.log('Your cumulative (cumCarb) carb total is ===============>' + cumCarb
 console.log('Your cumulative (cumProtien) protien total is =========>' + cumProtien);
 
 // JQuery for displaying Macronutrient bars (expands width of internal div)
-      $('.fatMeter').css('width', cumFat + "px")
-      $('.carbMeter').css('width', cumCarb + "px")
-      $('.proMeter').css('width', cumProtien + "px")
+      $('.fatMeter').css('width', (cumFat * .9) + "px")
+      $('.carbMeter').css('width', (cumCarb * .9) + "px")
+      $('.proMeter').css('width', (cumProtien * .9) + "px")
 
       $('#fatStat').html(cumFat)
       $('#proStat').html(cumProtien)
@@ -77,8 +77,24 @@ console.log("TOTAL FOOD ITEM Protien (thisProtien)=====> " + thisProtien)
 console.log("TOTAL FOOD ITEM Fat (thisFat)=============> " + thisFat)
 console.log("Total FOOD ITEM Calories (thisCal)========> " + thisCal)
 
-  });
-}
+let intCarb = parseInt(cumCarb);
+let intProtien = parseInt(cumProtien);
+let intFat = parseInt(cumFat);
+
+if (intCarb > 600 ) {
+    $(".welcomeBkgrd").css('background', 'url(./../../img/allisonTired.png) no-repeat center bottom')
+    $('#mood').html((intCarb - 600) + '<span class="state tired"> Tired</span> <span class="whyCarbs">too much bread and sugar ... </span>')
+  }
+if (intProtien > 600) {
+    $(".welcomeBkgrd").css('background', 'url(./../../img/allisonTired.png) no-repeat center bottom')
+    $('#mood').html((intProtien - 600) + ' Tired, too much protien ...')
+  } 
+if (intFat > 600) {
+    $(".welcomeBkgrd").css('background', 'url(./../../img/allisonTired.png) no-repeat center bottom')
+    $('#mood').html((intFat - 600) + '<span class="state tired"> Tired too much fatty food ... </span>')
+  }    
+    });
+} 
 
 render() {
   return (
