@@ -13,7 +13,9 @@ class RegisterForm extends React.Component {
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
 		this.handleChange = this.handleChange.bind(this)
-	}
+    }
+    
+    // Update state with registration inputs
 	handleChange(event) {
 		this.setState({
 			[event.target.name]: event.target.value
@@ -21,17 +23,18 @@ class RegisterForm extends React.Component {
         console.log(this.state)
     }
     
-    handleCheckbox(event) {
-		this.setState({
-			checkbox: event.target.checked
-		})
-	}
+    // Set the checkbox state
+    // handleCheckbox(event) {
+	// 	this.setState({
+	// 		checkbox: event.target.checked
+	// 	})
+	// }
 	handleSubmit(event) {
 		event.preventDefault()
         console.log('sign-up-form, username: ');
         console.log(this.state.username);
         //request to server here
-        if (this.state.checkbox === true) {
+        // if (this.state.checkbox === true) {
             if (this.state.username && this.state.password && this.state.confirmPassword && this.state.email) {
                 if (this.state.password === this.state.confirmPassword) {
                     axios.post('/user/', {
@@ -61,10 +64,10 @@ class RegisterForm extends React.Component {
             else {
                 alert('Please fill out all fields.')
             }
-        }
-        else {
-            alert('You must be 13 years or older to use this site.');
-        }
+        // }
+        // else {
+        //     alert('You must be 13 years or older to use this site.');
+        // }
     }
     
   render() {
@@ -88,7 +91,7 @@ class RegisterForm extends React.Component {
                     id="registerPass"
                     className="form-control mb-4"
                     placeholder="Password – make it good!" />
-                <input type="password"
+                {/* <input type="password"
                 	name="confirm"
                     value={this.state.confirmPassword}
                     onChange={this.handleChange}
@@ -107,7 +110,7 @@ class RegisterForm extends React.Component {
                     </div>
                     </div>
                 </div>
-                <br />
+                <br /> */}
                 <input type="email"
                 	name="email"
                     value={this.state.email}

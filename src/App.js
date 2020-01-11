@@ -2,6 +2,9 @@
 import React from 'react';
 import axios from 'axios';
 // React Routing Extension via React
+import {BrowserRouter} from 'react-router-dom';
+import Routes from './components/Routes';
+
 // Import of CSS files (bootstrap and Google Fonts CSS has been downloaded to css directory for performance)
 import '../src/index.css';
 import './css/App.css';
@@ -55,7 +58,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        
+          <BrowserRouter>
+          <Routes />
+          <App />
+        </BrowserRouter>,
       </>
     );
   }
