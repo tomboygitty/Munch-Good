@@ -5,8 +5,16 @@ class FoodStats extends React.Component {
   render() {    
     return (
       <div className="col-md-4 stats">
-        <h1>Current Mood: <span id="mood"> Riffic!</span></h1>
-        <h2>Stats</h2>
+        <h1>Allison is feeling 
+          <span id="mood"> Riffic!
+          </span>
+          <span class="carbMood">
+          </span>
+          <span class="protienMood"><br/>
+          </span>
+          <span class="fatMood"><br/>
+          </span>
+        </h1>
         <div className="macroStats column">
           <div className="col-md-12 status carbStat">
             <div className="carbMeter">

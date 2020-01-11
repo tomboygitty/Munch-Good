@@ -82,16 +82,19 @@ let intProtien = parseInt(cumProtien);
 let intFat = parseInt(cumFat);
 
 if (intCarb > 600 ) {
-    $(".welcomeBkgrd").css('background', 'url(./../../img/allisonTired.png) no-repeat center bottom')
-    $('#mood').html((intCarb - 600) + '<span class="state tired"> Tired</span> <span class="whyCarbs">too much bread and sugar ... </span>')
+    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+    $('#mood').html('<span class="state tired"> Tired </span>')
+    $('.carbMood').html('<br /><span class="howmuch">' + (intCarb - 600) + '</span><span class="whyCarbs why"> &ndash; too many bread and sugar calories ... </span>')
   }
 if (intProtien > 600) {
-    $(".welcomeBkgrd").css('background', 'url(./../../img/allisonTired.png) no-repeat center bottom')
-    $('#mood').html((intProtien - 600) + ' Tired, too much protien ...')
+    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+    $('#mood').html('<span class="state tired"> Meat sweats </span>')
+    $('.protienMood').html('<br /><span class="howmuch">' + (intProtien - 600) + '</span><span class="whyProtien why"> &ndash; too many meat, nuts, and grains ... </span>')
   } 
 if (intFat > 600) {
-    $(".welcomeBkgrd").css('background', 'url(./../../img/allisonTired.png) no-repeat center bottom')
-    $('#mood').html((intFat - 600) + '<span class="state tired"> Tired too much fatty food ... </span>')
+    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+    $('#mood').html('<span class="state tired"> Kinda icky </span>')
+    $('.fatMood').html('<br /><span class="howmuch">' + (intFat - 600) + '</span><span class="whyFats why"> &ndash; too much fatty food ... </span>')
   }    
     });
 } 
@@ -101,7 +104,7 @@ render() {
       <>
         {FoodData.foods.map((foodDetail, index) => {
             return (
-                <div className="col-md-3" key={index}> 
+                <div className="col-lg-3 col-md-3 col-sm-2 col-xs-6" key={index}> 
                     <img 
                     className="foodItem"
                     src= {foodDetail.img} 

@@ -4,6 +4,7 @@ body {
     position: relative;
     font-family: 'Poppins', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     overflow: hidden;
+    font-size: 12px;
 }
 h1 {
     font-family: 'riffic_freebold', 'Monteserrat', Arial, Helvetica, sans-serif;
@@ -153,7 +154,7 @@ img {
 /* -- REGISTER ---------------------------------- */
 form.border.border-light.p-5 {
     background: rgba(255,255,255,0.7);
-    margin-top: 150px;
+    margin-top: 0px;
     position: relative;
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgba(18,123,170,.5);
@@ -163,6 +164,7 @@ form.border.border-light.p-5 {
     z-index: 3;
     margin-bottom: -200px;
     top: -200px;
+    display: none;
 }
 .border-light {
   padding: 20px;
@@ -171,11 +173,11 @@ form.border.border-light.p-5 {
   margin-bottom: 20px;
   font-family: 'riffic_freebold','Montserrat',helvetica;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 20px;
   
 }
 .border-light input {
-  margin: 20px 0px;
+  margin: 10px 0px;
   max-width: calc(100%);
   font-family: 'riffic_freebold', 'Montserrat', helvetica;
   font-size: 20px;
@@ -245,11 +247,7 @@ form.border.border-light.p-5 {
 
 /* -- PLAY PAGE -------------------------------- */
 .interactive, .stats {
-    background: rgba(255,255,255,.25);
-    border-radius: 20px;
-    border: 3px solid #FFF;
     padding: 20px 20px 20px 40px;
-    box-shadow: 0px 10px 30px rgba(18,123,170,.5);
 }
 
 .foodItem {
@@ -268,19 +266,51 @@ form.border.border-light.p-5 {
   font-family: 'Yanone Kaffeesatz';
   position: relative;
   left: 50px;
-  top: 10px;
+  top: 6px;
   width: 200px;
+  height: 20px;
 }
 .status h4 span {
   color: #069;
   background: rgba(255,255,255,1);
-  padding: 10px;
+  padding: 8px;
   position: relative;
   left: -70px;
-  top: -30px;
-  border-radius: 30px;
+  top: -31px;
+  border-radius: 3px;
   border: 2px solid #069;
   font-size: 36px;
+}
+#mood {
+  font-family: 'riffic_freebold','Montserrat',sans-serif;
+  font-size: 4rem;
+}
+.stats h1, .stats h2{
+  font-family: 'riffic_freebold', 'Montserrat',sans-serif;
+}
+.stats h1 {
+  font-size: 2rem;
+  padding: 0px 0px;
+  margin: -20px 0px 10px;
+}
+#mood .state {
+  color: #9087C2;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+#mood .tired {
+  color: #069;
+}
+.carbMood .howmuch, .fatMood .howmuch, .protienMood .howmuch {
+  font-size: 4rem;
+  color: #e21e2d;
+}
+#mood .why {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+#mood br {
+    height: 1px;
 }
 /* ----------- APP FOOTER ----------------------- */
 
@@ -326,15 +356,15 @@ form.border.border-light.p-5 {
 }
 
 .macroStats .carbStat, .macroStats .proStat, .macroStats .fatStat {
-    height: 65px;
+    height: 55px;
     border: 2.5px #FFF solid;
     width: calc(100% - 60px);
-    margin: 20px;
+    margin: 0px 20px;
     border-radius: 10px;
     background: rgba(18,123,170,.5);
 }
 .carbMeter, .fatMeter, .proMeter {
-    height: 65px;
+    height: 55px;
     width: 0px;
     border-radius: 10px;
     border: 3px solid #FFF;
@@ -355,7 +385,7 @@ form.border.border-light.p-5 {
 }
 
 .actionWrap h3 span.foodEaten {
-  font-size: 10rem;
+  font-size: 7rem;
   font-family: 'riffic_freebold';
   letter-spacing: -4px;
 }
@@ -373,7 +403,41 @@ form.border.border-light.p-5 {
   -webkit-text-stroke-color: rgba(255,255,255,0.3);
 }
 
-
+@media screen and (max-width: 1060px) {
+    .actionWrap h3 span.foodEaten {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    img.small-logo {
+        padding: 0px 0px 0px 0px;
+        margin: 0px auto 0px;
+    }
+    .interactive.col-md-4 {
+        width: 40%;
+        height: 100vh;
+    }
+    .welcomeBkgrd {
+        background-position-x: 350px;
+        background-position-y: 290px;
+    }
+    .col-md-4.actionWrap {
+        position: absolute;
+        bottom: 50px;
+        width: 340px;
+        left: 30px;
+    }
+    .actionWrap span.mainMacro {
+        font-size: 2rem;
+    }
+    div.col-md-4.stats {
+        position: absolute;
+        width: 50%;
+        right: -40px;
+    }
+    #mood span.why {
+        font-size: 12px;
+    }
+}
 @media screen and (min-width: 960px) {
     .mbl-only {display: none;}
 }
