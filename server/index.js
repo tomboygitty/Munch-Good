@@ -5,7 +5,9 @@ const pino = require('express-pino-logger')();
 const path = require('path');
 const session = require('express-session')
 const dbConnection = require('./database') 
-const routes = require('../server/routes/')
+const routes = require('./routes/api/')
+var morgan = require('morgan')
+var MongoStore = require('connect-mongo')(session)
 
 const passport = require('./passport');
 
@@ -43,6 +45,7 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session()) // calls the deserializeUser
 
+app.get('/hey'), (req, res) => res.send('yo!!!')
 
 // Routes
 app.use(routes)
