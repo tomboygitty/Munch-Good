@@ -207,6 +207,36 @@ form.border.border-light.p-5 {
     background: url('../img/allisonNhill.png') center bottom no-repeat;
     height: 100vh;
 }
+.App {
+    text-align: center;
+}
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 0 5%;
+}
+.nav-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 100px;
+    background: url('../img/allisonNhill.png') center bottom no-repeat;
+    height: 100vh;
+    z-index: 10;
+}
+.menu-button {
+    appearance: none;
+    color:white;
+    font-weight: bold;
+    font-size: 5rem;
+    background: transparent;
+    border: none;
+    z-index: 15;
+}
 .welcomeBtns .col-md-6 {
     height: 150px;
     border: 5px solid #FFF;

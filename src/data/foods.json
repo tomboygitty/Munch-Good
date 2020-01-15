@@ -1,3 +1,4 @@
+
 {
     "foods": [
     {
@@ -6,8 +7,7 @@
         "calories": 90,
         "carbs": 15, 
         "protien": 4,
-        "fat": 1,
-        "key": 1
+        "fat": 1
     },
     {
         "food": "Snack",
@@ -15,136 +15,119 @@
         "calories": 140,
         "carbs": 25,
         "protien": 3, 
-        "fat": 3,
-        "key": 2
+        "fat": 3
     },{
         "food": "Cake",
         "img": "img/f_cake.png",
         "calories": 300,
         "carbs": 46,
         "protien": 4, 
-        "fat": 10,
-        "key": 3
+        "fat": 10
     },{
         "food": "Pasta / Noodles",
         "img": "img/f_pasta.png",
         "calories": 196,
         "carbs": 40,
         "protien": 7, 
-        "fat": 1,
-        "key": 4
+        "fat": 1
     },{
         "food": "Chicken",
         "img": "img/f_chicken.png",
         "calories": 90,
         "carbs": 1,
         "protien": 23, 
-        "fat": 1,
-        "key": 5
+        "fat": 1
     },{
         "food": "Pork",
         "img": "img/f_pork.png",
         "calories": 128,
         "carbs": 2,
         "protien": 10,
-        "fat": 9,
-        "key": 6
+        "fat": 9
     },{
         "food": "Hamburger",
         "img": "img/f_hamburger.png",
         "calories": 350,
         "carbs": 33,
         "protien": 23,
-        "fat": 14,
-        "key": 7
+        "fat": 14
     },{
-        "food": "Hot dog",
+        "food": "Hotdog",
         "img": "img/f_hotdog.png",
         "calories": 381,
         "carbs": 26, 
         "protien": 14,
-        "fat": 23,
-        "key": 8
+        "fat": 23
     },{
         "food": "Taco",
         "img": "img/f_taco.png",
         "calories": 264,
         "carbs": 25, 
         "protien": 14,
-        "fat": 12,
-        "key": 9
+        "fat": 12
     },{
         "food": "Veggies",
         "img": "img/f_veggies.png",
         "calories": 36,
         "carbs": 7,
         "protien": 2, 
-        "fat": 0,
-        "key": 10
+        "fat": 0
     },{
         "food": "Fruit",
         "img": "img/f_fruit.png",
         "calories": 90,
         "carbs": 15, 
         "protien": 4,
-        "fat": 3,
-        "key": 11
+        "fat": 3
     },{
         "food": "Cheese",
         "img": "img/f_cheese.png",
         "calories": 103,
         "carbs": 4,
         "protien": 6, 
-        "fat": 7,
-        "key": 12
+        "fat": 7
     },{
         "food": "Fruity Snack",
         "img": "img/f_fruity.png",
         "calories": 80,
         "carbs": 15,
         "protien": 3,
-        "fat": 1,
-        "key": 13
+        "fat": 1
     },{
         "food": "Pastry",
         "img": "img/f_pastry.png",
         "calories": 291,
         "carbs": 36,
         "protien": 4,
-        "fat": 14,
-        "key": 14
+        "fat": 14
     },{
-        "food": "Ice Cream",
+        "food": "Ice-Cream",
         "img": "img/f_icecream.png",
         "calories": 170,
         "carbs": 27,
         "protien": 4,
-        "fat": 5,
-        "key": 15
+        "fat": 5
     },{
         "food": "Milk",
         "img": "img/f_milk.png",
         "calories": 96,
         "carbs": 10,
         "protien": 7,
-        "fat": 7,
-        "key": 16
+        "fat": 7
     },{
         "food": "Soda",
         "img": "img/f_soda.png",
         "calories": 145,
         "carbs": 36,
         "protien": 0,
-        "fat": 0,
-        "key": 17
+        "fat": 0
     },{
         "food": "Water",
         "img": "img/f_water.png",
         "calories": 0,
         "carbs": 0,
         "protien": 0,
-        "fat": 0,
-        "key": 18
+        "fat": 0
     },
     {
         "food": "Juice",
@@ -152,8 +135,7 @@
         "calories": 145,
         "carbs": 36,
         "protien": 0,
-        "fat": 0,
-        "key": 19
+        "fat": 0
     }
     ]
 }
