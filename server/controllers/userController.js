@@ -1,11 +1,11 @@
-const db = require('../database/models/user');
+const db = require('../database/models');
 const passport = require('../passport')
 
 module.exports = {
     signUp: (req, res) => {
         console.log('user signup');
-        console.log()
-        const { username, password, email } = req.body
+        const { username, password, email } = req.body;
+        console.log(username, password, email)
         // ADD VALIDATION
         db.User.findOne({ username: username }, (err, user) => {
             if (err) {
