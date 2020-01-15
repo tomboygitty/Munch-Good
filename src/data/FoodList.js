@@ -54,9 +54,9 @@ console.log('Your cumulative (cumCarb) carb total is ===============>' + cumCarb
 console.log('Your cumulative (cumProtien) protien total is =========>' + cumProtien);
 
 // JQuery for displaying Macronutrient bars (expands width of internal div)
-      $('.fatMeter').css('width', cumFat + "px")
-      $('.carbMeter').css('width', cumCarb + "px")
-      $('.proMeter').css('width', cumProtien + "px")
+      $('.fatMeter').css('width', (cumFat * .9) + "px")
+      $('.carbMeter').css('width', (cumCarb * .9) + "px")
+      $('.proMeter').css('width', (cumProtien * .9) + "px")
 
       $('#fatStat').html(cumFat)
       $('#proStat').html(cumProtien)
@@ -77,15 +77,34 @@ console.log("TOTAL FOOD ITEM Protien (thisProtien)=====> " + thisProtien)
 console.log("TOTAL FOOD ITEM Fat (thisFat)=============> " + thisFat)
 console.log("Total FOOD ITEM Calories (thisCal)========> " + thisCal)
 
-  });
-}
+let intCarb = parseInt(cumCarb);
+let intProtien = parseInt(cumProtien);
+let intFat = parseInt(cumFat);
+
+if (intCarb > 600 ) {
+    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+    $('#mood').html('<span class="state tired"> Tired </span>')
+    $('.carbMood').html('<br /><span class="howmuch">' + (intCarb - 600) + '</span><span class="whyCarbs why"> &ndash; too many bread and sugar calories ... </span>')
+  }
+if (intProtien > 600) {
+    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+    $('#mood').html('<span class="state tired"> Meat sweats </span>')
+    $('.protienMood').html('<br /><span class="howmuch">' + (intProtien - 600) + '</span><span class="whyProtien why"> &ndash; too many meat, nuts, and grains ... </span>')
+  } 
+if (intFat > 600) {
+    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+    $('#mood').html('<span class="state tired"> Kinda icky </span>')
+    $('.fatMood').html('<br /><span class="howmuch">' + (intFat - 600) + '</span><span class="whyFats why"> &ndash; too much fatty food ... </span>')
+  }    
+    });
+} 
 
 render() {
   return (
       <>
         {FoodData.foods.map((foodDetail, index) => {
             return (
-                <div className="col-md-3" key={index}> 
+                <div className="col-lg-3 col-md-3 col-sm-2 col-xs-6" key={index}> 
                     <img 
                     className="foodItem"
                     src= {foodDetail.img} 
