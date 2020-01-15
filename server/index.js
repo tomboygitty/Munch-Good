@@ -45,7 +45,7 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session()) // calls the deserializeUser
 
-app.get('/hey'), (req, res) => res.send('yo!!!')
+//app.get('/hey'), (req, res) => res.send('yo!!!')
 
 // Routes
 app.use(routes)

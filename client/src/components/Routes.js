@@ -2,11 +2,11 @@
 import React from 'react'
 import {Route, Switch}from 'react-router-dom';
 // Import of PAGE level components
-import Registration from '../components/Registration';
+import Registration from './Registration';
 import App from '../App';
-import Play from '../components/Play';
-import Team from '../components/Team';
-import Welcome from '../components/Welcome';
+import Play from './Play';
+import Team from './Team';
+import Welcome from './Welcome';
 
 // THIS COMPONENT - Routing for specific urls to specific PAGE LEVEL components
 class Routes extends React.Component {

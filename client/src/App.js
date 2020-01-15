@@ -6,7 +6,7 @@ import HomeAppBody from './components/home/HomeAppBody'
 import axios from 'axios'
 // React Routing Extension via React
 // Import of CSS files (bootstrap and Google Fonts CSS has been downloaded to css directory for performance)
-import '../src/index.css';
+import './index.css';
 import './css/App.css';
 import './css/bootstrap.css';
 import './css/fonts.css';

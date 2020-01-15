@@ -1,5 +1,5 @@
 import React from 'react'
-import FoodList from './../../data/FoodList'
+import FoodList from '../../data/FoodList'
 
 class FoodButtons extends React.Component {
   

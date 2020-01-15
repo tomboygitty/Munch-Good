@@ -24,7 +24,7 @@ class RegisterForm extends React.Component {
 		event.preventDefault()
 
 
-		request to server to add a new username/password
+		// request to server to add a new username/password
 		Axios.post("/user", {
 			username: this.state.username,
             password: this.state.password,

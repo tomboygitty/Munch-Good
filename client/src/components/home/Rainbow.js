@@ -1,8 +1,8 @@
 import React from 'react'
 // Components
-import Login from '../../components/home/Login'
-import Register from '../../components/home/Register'
-import Spacer4 from '../../components/shared/Spacer4'
+import Login from './Login'
+import Register from './Register'
+import Spacer4 from '../shared/Spacer4'
 
 class Rainbow extends React.Component {
   render() {

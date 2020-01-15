@@ -1,6 +1,6 @@
 // Standard React import to make this a React Component
 import React from 'react';
-import FoodData from '../data/foods.json'
+import FoodData from './foods.json'
 import $ from 'jquery';
 
 class FoodList extends React.Component {

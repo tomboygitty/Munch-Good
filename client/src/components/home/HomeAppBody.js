@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
 import Radial from '../shared/Radial'
-import Rainbow from '../home/Rainbow'
+import Rainbow from './Rainbow'
 import Footer from '../shared/Footer'
 
 class HomeAppBody extends React.Component {
