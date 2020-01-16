@@ -201,6 +201,22 @@ form.border.border-light.p-5 {
     .border-light button:hover {
         box-shadow: none;
     }
+/* --Testimonials --------------------------------*/
+.shape {
+    position: relative;
+    shape-outside: circle(50%) margin-box;
+    cursor: pointer;
+    will-change: transform, opacity;
+  }
+  .back {
+    background: url('../img/allisonNhill.png') center bottom no-repeat;
+    background-size: cover;
+  }
+  .front {
+    background-image: url('../img/overweight-child.jpg');
+    background-size: cover;
+  }
+  
 
 /* -- WELCOME ----------------------------------- */
 .welcomeBkgrd {
@@ -225,17 +241,35 @@ form.border.border-light.p-5 {
     bottom: 0;
     padding: 100px;
     background: url('../img/allisonNhill.png') center bottom no-repeat;
+    /* background-color: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(188,230,251,1) 100%); */
     height: 100vh;
     z-index: 10;
+}
+.nav-wrapper a {
+    display: block;
+    text-align: left;
+    font-size: 4rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease border;
+    border-bottom: solid 4px transparent;
 }
 .menu-button {
     appearance: none;
     color:white;
     font-weight: bold;
-    font-size: 5rem;
-    background: transparent;
+    font-size: 2rem;
+    margin-top: 25px;
+    background: url('../img/munch-logo.png') right top no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 150px;
     border: none;
     z-index: 15;
+}
+.logo{
+    width: 200px;
 }
 .welcomeBtns .col-md-6 {
     height: 150px;
@@ -271,6 +305,36 @@ form.border.border-light.p-5 {
 }
 .story-btn {
     background: #9087C2;
+}
+
+/*-- PAGE TRANSITIONS------------------------------ */
+/* .page-route {
+    height: 60vh;
+    background:rgba(18,123,170,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-route.two {
+    background: #7753AB;
+}
+.page-route.three{
+    background: #F8735B;
+}
+.page-route.four{
+    background: #FCA300;
+} */
+.router-nav {
+    display: flex;
+    list-style: none;
+    position: relative;
+    z-index: 5;
+}
+.router-nav a {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 10px;
 }
 
 /* -- PLAY PAGE -------------------------------- */
