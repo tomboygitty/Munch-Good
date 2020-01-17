@@ -105,6 +105,23 @@ class FoodList extends React.Component {
       localStorage.setItem('Carbs', intCarb)  
       localStorage.setItem('Fat', intFat) 
       localStorage.setItem('Protien', intProtien)
+      localStorage.setItem('CumCarbs', intCarb + parseInt(thisCarbs) )
+      localStorage.setItem('CumFat', intFat + parseInt(thisFat) )
+      localStorage.setItem('CumProtien', intProtien + parseInt(thisProtien) )
+      localStorage.setItem('ProBask', thisProtien)
+      localStorage.setItem('FatBask', thisFat)
+      localStorage.setItem('CarbBask', thisCarbs)
+    });
+    $('.my-btn').on('click', function(){
+      let cumCarb = localStorage.getItem('CumCarbs');
+      let carbBask = localStorage.getItem('CarbBask');
+      let cumFat = localStorage.getItem('CumFat');
+      let fatBask = localStorage.getItem('FatBask');
+      let cumProtien = localStorage.getItem('CumProtien');
+      let proBask = localStorage.getItem('ProBask');
+      localStorage.setItem('CumCarb', parseInt(cumCarb) + parseInt(carbBask))
+      localStorage.setItem('CumProtien', parseInt(cumProtien) + parseInt(proBask))
+      localStorage.setItem('CumFat', parseInt(cumFat) + parseInt(fatBask))
     });
   } 
 

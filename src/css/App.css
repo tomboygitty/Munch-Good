@@ -211,7 +211,7 @@ form.border.border-light.p-5 {
     background: url('../img/allisonNhill.png') center bottom no-repeat;
     height: 100vh;
 }
-.play-btn, .my-btn {
+.play-btn.col-md-4, .my-btn.col-md-4 {
     height: 80px;
     border: 5px solid #FFF;
     box-shadow: 0px 0px 30px rgba(18,123,170,.5) ;
@@ -228,19 +228,21 @@ form.border.border-light.p-5 {
     padding-top: 15px;
     font-style: italic;
     transition: all .5s ease .125s;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .play-btn a, .my-btn a {
     padding: none;
     margin: none;
     color: #FFF;
-    transition: all .5s ease .125s;
-    font-size: 24px;
+    transition: all .125s ease .0125s;
+    font-size: 22px;
     text-decoration: none;
     }
     .play-btn a:hover, .my-btn a:hover {
         text-decoration: none;
         color: #FFF;
-        font-size: 30px;
+        font-size: 28px;
     }
 .play-btn {
     background: #F8735B;
