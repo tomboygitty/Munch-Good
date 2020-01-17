@@ -1,8 +1,10 @@
 import React from 'react'
 
 import Radial from './shared/Radial'
-import Spacer4 from './shared/Spacer4'
 import Footer from './shared/Footer'
+
+import $ from 'jquery';
+import MainNav from './shared/MainNav';
 
 class Welcome extends React.Component {
   render() {
@@ -11,40 +13,42 @@ class Welcome extends React.Component {
         <Radial />
         <div className="container-fluid appBody welcomeBkgrd">
           <div className="row">
-            <Spacer4 />
+            <MainNav />
+          </div>
+          <div className="row">
             <div className="col-md-4">
-              <a href="/">
-                <img className="small-logo" src="img/logo.png" alt="Allison the Health-conscious Unicorn" />
-              </a>
-              <div className="row welcomeBtns">
-                <div className="col-md-6 play-btn">
-                  <a href="/play">
-                    <h1>let's<br />play!</h1>
-                  </a>
-                </div>
-                <div className="col-md-6 my-btn">
-                  <a href="/welcome">
-                    <h1>my<br />profile!</h1>
-                  </a>
-                </div>
-                <div className="col-md-6 healthy-btn">
-                  <a href="/welcome">
-                    <h1>healthy<br />tips!</h1>
-                  </a>
-                </div>
-                <div className="col-md-6 story-btn">
-                  <a href="story.html">
-                    <h1>Allison's<br />story!</h1>
-                  </a>
-                </div>
-              </div>
             </div>
-            <Spacer4 />
+            <div className="col-md-4 username">
+                <h2>Username</h2>
+                <h3>{localStorage.getItem('UserName')}'s muncher has eaten <br/><span className="calories"></span> total energy units!</h3>
+                <h3><span className="carbs"></span>% <br />of Allison's diet is bread, sugar, and starch</h3>
+                <h3><span className="protiens"></span>% <br />of Allison's diet is meat, nuts, or grain</h3>
+                <h3><span className="fats"></span>% <br />of Allison's diet kinda greasy</h3>
+            </div>
+            <div className="col-md-4">
+            </div>
           </div>
         </div>
         <Footer />
       </div>
     )
   }
+
+  componentDidMount() {
+    let uname = localStorage.getItem('UserName')
+    let ucarbs = localStorage.getItem('Carbs')
+    let ufats = localStorage.getItem('intFat')
+    let upros = localStorage.getItem('Protien')
+    let ucals = ( parseInt(ucarbs) + parseInt(upros) + parseInt(ufats) )
+    let perCarbs = Math.floor( (parseInt(ucarbs) / ucals) * 100 )
+    let perProtiens = Math.floor( (parseInt(upros) / ucals) * 100)
+    let perFats = Math.floor( (parseInt(ufats) / ucals) * 100)
+    $('.calories').html(ucals);
+    $('.username h2').html(uname)
+    $('.carbs').html(perCarbs);
+    $('.protiens').html(perProtiens);
+    $('.fats').html(perFats);
+  }
+
 }
 export default Welcome

@@ -8,11 +8,11 @@ class FoodStats extends React.Component {
         <h1>Allison is feeling 
           <span id="mood"> Riffic!
           </span>
-          <span class="carbMood">
+          <span className="carbMood">
           </span>
-          <span class="protienMood"><br/>
+          <span className="protienMood"><br/>
           </span>
-          <span class="fatMood"><br/>
+          <span className="fatMood"><br/>
           </span>
         </h1>
         <div className="macroStats column">

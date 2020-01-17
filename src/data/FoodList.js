@@ -49,9 +49,9 @@ class FoodList extends React.Component {
         cumProtien += proMeter[i];
       }
 // Current cumulative TOTALS FOR MACROS
-console.log('Your cumulative (cumFat) fat total is =================>' + cumFat);
-console.log('Your cumulative (cumCarb) carb total is ===============>' + cumCarb);
-console.log('Your cumulative (cumProtien) protien total is =========>' + cumProtien);
+      console.log('Your cumulative (cumFat) fat total is =================>' + cumFat);
+      console.log('Your cumulative (cumCarb) carb total is ===============>' + cumCarb);
+      console.log('Your cumulative (cumProtien) protien total is =========>' + cumProtien);
 
 // JQuery for displaying Macronutrient bars (expands width of internal div)
       $('.fatMeter').css('width', (cumFat * .9) + "px")
@@ -71,36 +71,42 @@ console.log('Your cumulative (cumProtien) protien total is =========>' + cumProt
       else {
         $('.mainMacro').text('SKIN & ORGAN HEALTH!');
       }
-console.log("FOOD: " + clickedFood)
-console.log("TOTAL FOOD ITEM Carbs (thisCarbs)=========> " + thisCarbs)
-console.log("TOTAL FOOD ITEM Protien (thisProtien)=====> " + thisProtien)
-console.log("TOTAL FOOD ITEM Fat (thisFat)=============> " + thisFat)
-console.log("Total FOOD ITEM Calories (thisCal)========> " + thisCal)
+      console.log("FOOD: " + clickedFood)
+      console.log("TOTAL FOOD ITEM Carbs (thisCarbs)=========> " + thisCarbs)
+      console.log("TOTAL FOOD ITEM Protien (thisProtien)=====> " + thisProtien)
+      console.log("TOTAL FOOD ITEM Fat (thisFat)=============> " + thisFat)
+      console.log("Total FOOD ITEM Calories (thisCal)========> " + thisCal)
 
-let intCarb = parseInt(cumCarb);
-let intProtien = parseInt(cumProtien);
-let intFat = parseInt(cumFat);
+      let intCarb = parseInt(cumCarb);
+      let intProtien = parseInt(cumProtien);
+      let intFat = parseInt(cumFat);
 
-if (intCarb > 600 ) {
-    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
-    $('body').css('background', '#B0C4DE')
-    $('#mood').html('<span class="state tired"> Tired </span>')
-    $('.carbMood').html('<br /><span class="howmuch">' + (intCarb - 600) + '</span><span class="whyCarbs why"> &ndash; too many bread and sugar calories ... </span>')
-  }
-if (intProtien > 600) {
-    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
-    $('body').css('background', '#B0C4DE')
-    $('#mood').html('<span class="state tired"> Meat sweats </span>')
-    $('.protienMood').html('<br /><span class="howmuch">' + (intProtien - 600) + '</span><span class="whyProtien why"> &ndash; too many meat, nuts, and grains ... </span>')
-  } 
-if (intFat > 600) {
-    $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
-    $('body').css('background', '#B0C4DE')
-    $('#mood').html('<span class="state tired"> Kinda icky </span>')
-    $('.fatMood').html('<br /><span class="howmuch">' + (intFat - 600) + '</span><span class="whyFats why"> &ndash; too much fatty food ... </span>')
-  }    
+      if (intCarb > 600 ) {
+          $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+          $('body').css('background', '#B0C4DE')
+          $('#mood').html('<span class="state tired"> Tired </span>')
+          $('.carbMood').html('<br /><span class="howmuch">' + (intCarb - 600) + '</span><span class="whyCarbs why"> &ndash; too many bread and sugar calories ... </span>')
+          
+      }
+      if (intProtien > 600) {
+          $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+          $('body').css('background', '#B0C4DE')
+          $('#mood').html('<span class="state tired"> Meat sweats </span>')
+          $('.protienMood').html('<br /><span class="howmuch">' + (intProtien - 600) + '</span><span class="whyProtien why"> &ndash; too many meat, nuts, and grains ... </span>')
+          
+      } 
+      if (intFat > 600) {
+          $(".welcomeBkgrd").css('background-image', 'url(./../../img/allisonTired.png)')
+          $('body').css('background', '#B0C4DE')
+          $('#mood').html('<span class="state tired"> Kinda icky </span>')
+          $('.fatMood').html('<br /><span class="howmuch">' + (intFat - 600) + '</span><span class="whyFats why"> &ndash; too much fatty food ... </span>')
+         
+      } 
+      localStorage.setItem('Carbs', intCarb)  
+      localStorage.setItem('Fat', intFat) 
+      localStorage.setItem('Protien', intProtien)
     });
-} 
+  } 
 
 render() {
   return (
