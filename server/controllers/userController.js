@@ -1,5 +1,5 @@
 const db = require('../database/models');
-const passport = require('../passport');
+const passport = require('passport');
 
 module.exports = {
     signUp: (req, res) => {

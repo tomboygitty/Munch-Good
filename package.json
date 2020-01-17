@@ -36,9 +36,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "cd server && nodemon index.js",
+    "server": "nodemon server/index.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"cd client && react-scripts start\" \"nodemon server/index.js\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": "react-app"
