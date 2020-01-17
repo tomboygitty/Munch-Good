@@ -2,7 +2,6 @@
 import React from 'react';
 import Radial from './shared/Radial';
 import RegisterForm from './registration/RegisterForm';
-import MainNav from './shared/MainNav';
 import Footer from './shared/Footer';
 
 // THIS COMPONENT - Register / Account Creation page
@@ -13,7 +12,11 @@ class Registration extends React.Component {
           <div>
             <Radial />
             <div className="container-fluid appBody">
-              <MainNav />
+              <div className="col-md-12">
+                <a href="/">
+                  <img className="small-logo" src="img/logo.png" alt="Allison the Health-conscious Unicorn" />
+                </a>
+              </div>
               <div className="row">
                 <div className="col-md-4">
                   {/* spacer */}

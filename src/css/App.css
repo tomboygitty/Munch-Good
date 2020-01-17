@@ -9,6 +9,8 @@ body {
 h1 {
     font-family: 'riffic_freebold', 'Monteserrat', Arial, Helvetica, sans-serif;
 }
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
 .container-fluid {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -209,29 +211,37 @@ form.border.border-light.p-5 {
     background: url('../img/allisonNhill.png') center bottom no-repeat;
     height: 100vh;
 }
-.welcomeBtns .col-md-6 {
-    height: 150px;
+.play-btn, .my-btn {
+    height: 80px;
     border: 5px solid #FFF;
     box-shadow: 0px 0px 30px rgba(18,123,170,.5) ;
-    border-radius: 200px;
+    border-radius: 0px 0px 40px 40px;
     color: #FFF;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 45%;
-    margin: 2.5%;
-    flex-basis: 45%;
-}
-.welcomeBtns .col-md-6 > a {
-    color: #FFF;
-}
-.welcomeBtns h1 {
+    margin: -5px auto 0px;
     font-family: 'riffic_freebold', 'Poppins', sans-serif;
     font-weight: 900;
     text-shadow: 2px 2px rgba(0,0,0,0.5);
     padding-top: 15px;
     font-style: italic;
+    transition: all .5s ease .125s;
 }
+.play-btn a, .my-btn a {
+    padding: none;
+    margin: none;
+    color: #FFF;
+    transition: all .5s ease .125s;
+    font-size: 24px;
+    text-decoration: none;
+    }
+    .play-btn a:hover, .my-btn a:hover {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 30px;
+    }
 .play-btn {
     background: #F8735B;
 }
@@ -243,6 +253,41 @@ form.border.border-light.p-5 {
 }
 .story-btn {
     background: #9087C2;
+}
+.appBody .username {
+    text-align: center;
+    background: url(../img/cloudBkgrd.png) no-repeat center center;
+    background-size: contain;
+    padding: 40px;
+}
+.appBody .username h2 {
+    font-family: 'riffic_freebold';
+    font-size: 8rem;
+    color: purple;
+    transform: rotate(-3deg);
+    -webkit-text-stroke: 1px #FFF;
+    margin-top: -40px;
+}
+.username h3 {
+    font-family: 'Montserrat', condensed, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.username h3 span {
+    font-family: 'riffic_freebold', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.username h3 .calories {
+    color: #069;
+}
+.username h3 .carbs {
+    color: #e21e2d;
+}
+.username h3 .protiens {
+    color: purple;
+}
+.username h3 .fats {
+    color: #F8735B;
 }
 
 /* -- PLAY PAGE -------------------------------- */
@@ -441,6 +486,88 @@ form.border.border-light.p-5 {
 @media screen and (min-width: 960px) {
     .mbl-only {display: none;}
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 995px) {
     .mbl-only {display: inline-block;}
+    .col-md-4.interactive {
+        width: 60%;
+    }
+    div.col-md-4.stats {
+        width: 45%;
+        top: 50px;
+    }
+    img.small-logo {
+        margin: 0px 0px;
+        padding: 10px;
+    }
+    .appBody {
+        background-position-x: 400px;
+        background-position-y: bottom;
+        background-size: 60%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-md-4.interactive {
+        width: 100%;
+    }
+    div.col-md-4.stats{
+        width: 100%;
+        top: 350px;
+        left: 20px;
+    }
+    div.col-md-4.actionWrap {
+        top: -20px;
+        left: 50%;
+        width: 50%;
+    }
+    div.col-md-4.actionWrap .foodEaten {
+        font-size: 20px;
+        -webkit-text-stroke-width: 0px;
+        letter-spacing: 0px;
+        line-height: 24px;
+    }
+    div.col-md-4.actionWrap h3, div.col-md-4.actionWrap h4 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .appBody {
+        background-position-x: 0px;
+        background-size: 100%;
+    }
+}
+@media screen and (max-width: 468px) {
+    .appBody {
+        background-position-x: center;
+    background-size: 80%;
+    }
+    .col-xs-2 {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+    div.actionWrap {
+        display: none;
+    }
+    div.col-md-4.stats h1 {
+        width: 50%;
+        position: absolute;
+        top: -47vh;
+        text-align: center;
+        right: 10px;
+    }
+    .macroStats .carbStat, .macroStats .proStat, .macroStats .fatStat, .carbMeter, .fatMeter, .proMeter {
+        height: 35px;
+    }
+    .status h4 {
+        top: -2px;
+        color: #FFF;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.7);
+    }
+    .status h4 span {
+        height: 35px;
+        font-size: 18px;
+        text-shadow: none;
+        top: -25px;
+    }
+    .foodItem {
+        margin-bottom: 5px; 
+    }
 }
