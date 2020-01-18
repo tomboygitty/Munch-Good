@@ -49,5 +49,6 @@ class Welcome extends React.Component {
       $('.fats').html(parseInt(ufats) + ' units');
      
   }
+
 }
 export default Welcome
