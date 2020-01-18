@@ -12,7 +12,7 @@ The app is largely successful for our limited scope. User credentials are stored
 
 ## Individual Responsibilities
 `Stephen Fox` - Project Manager, General Concept, Graphic Design, Front-End
-`Anissa B` - Content Manager, General Concept, Presentation, Styling
+`Anissa Bartley` - Content Manager, General Concept, Presentation, Styling
 `Tom Elliott` - Back-End, General Concept, Repo Management/Deployment
 
 ### Challenges
