@@ -11,8 +11,8 @@ Our team wanted to make a health-tracking app with a focus on educating its user
 The app is largely successful for our limited scope. User credentials are stored locally to track the amount of each nutrient that have been consumed. A variety of foods show how different choices can affect one's overall health.
 
 ## Individual Responsibilities
-`Stephen Fox` - Project Manager, General Concept, Graphic Design, Front-End
-`Anissa Bartley` - Content Manager, General Concept, Presentation, Styling
+`Stephen Fox` - Project Manager, General Concept, Graphic Design, Front-End<br />
+`Anissa Bartley` - Content Manager, General Concept, Presentation, Styling<br />
 `Tom Elliott` - Back-End, General Concept, Repo Management/Deployment
 
 ### Challenges
