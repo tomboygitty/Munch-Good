@@ -5,7 +5,7 @@ const pino = require('express-pino-logger')();
 const path = require('path');
 const session = require('express-session')
 const dbConnection = require('./database') 
-const routes = require('./routes/api/')
+const routes = require('./routes/')
 var morgan = require('morgan')
 var MongoStore = require('connect-mongo')(session)
 

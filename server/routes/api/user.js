@@ -2,7 +2,7 @@ const router = require("express").Router();
 const userController = require("../../controllers/userController");
 
 // Matches with "/"
-router.route("/")
+router.route("/signup")
   .get(userController.getUsers)
   .post(userController.signUp);
 

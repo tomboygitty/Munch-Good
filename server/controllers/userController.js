@@ -1,8 +1,8 @@
 const db = require('../database/models');
 const passport = require('passport');
 
-module.exports = {
-    signUp: (req, res) => {
+module.exports.controller = function(app) {
+    app.post('/signup', function(req, res) {
         console.log('user signup');
         const { username, password, email } = req.body;
         console.log(username, password, email)
@@ -22,15 +22,15 @@ module.exports = {
                     email: email
                 })
                 newUser.save((err, savedUser) => {
-                    if (err) return res.json(err)
-                    res.json(savedUser)
+                    if (err) return res.json(err);
+                    res.redirect('/welcome');
                     console.log('signup success')
                 })
             }
         })
-    },
+    });
     
-    login: (req, res) => {
+    app.post('/login', function(req, res) {
         (req, res, next) => {
             console.log('routes/user.js, login, req.body: ');
             
@@ -45,9 +45,9 @@ module.exports = {
             };
             res.send(userInfo);
         }
-    },
+    });
     
-    getUsers: (req, res, next) => {
+    app.get('/signup', function(req, res, next) {
         console.log('===== user!!======')
         console.log(req.user)
         if (req.user) {
@@ -55,13 +55,13 @@ module.exports = {
         } else {
             res.json({ user: null })
         }
-    },
+    });
     
-    logout: (req, res) => {
+    app.post('/logout', function(req, res) {
         if (req.user) {
             res.send({ msg: 'logging out' })
         } else {
             res.send({ msg: 'no user to log out' })
         }
-    }
+    });
 };

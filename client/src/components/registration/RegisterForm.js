@@ -25,7 +25,7 @@ class RegisterForm extends React.Component {
 
 
 		// request to server to add a new username/password
-		Axios.post("/user", {
+		Axios.post("/signup", {
 			username: this.state.username,
             password: this.state.password,
             email: this.state.email
