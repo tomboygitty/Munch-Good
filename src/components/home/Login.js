@@ -13,7 +13,7 @@ class Login extends React.Component {
         <div className="col-md-6">
             <form id="login" action="/welcome">
             <input id="usernameLS" placeholder="Username" />
-            <input id="passwordLS" type="password" placeholder="Password" />
+            <input id="passwordLS" type="password" autoComplete="on" placeholder="Password" />
             <button type="submit"> LOGIN </button>
             </form>
         </div>
