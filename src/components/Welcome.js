@@ -22,9 +22,9 @@ class Welcome extends React.Component {
             <div className="col-md-4 username">
                 <h2>Username</h2>
                 <h3>{localStorage.getItem('UserName')}'s muncher has eaten <br/><span className="calories"></span> total energy units!</h3>
-                <h3><span className="carbs"></span> <br />of Allison's diet is bread, sugar, and starch</h3>
-                <h3><span className="protiens"></span> <br />of Allison's diet is meat, nuts, or grain</h3>
-                <h3><span className="fats"></span> <br />of Allison's diet kinda greasy</h3>
+                <h3><span className="carbs">0 </span> <br />of Allison's diet is bread, sugar, and starch</h3>
+                <h3><span className="protiens">0 </span> <br />of Allison's diet is meat, nuts, or grain</h3>
+                <h3><span className="fats">0 </span> <br />of Allison's diet kinda greasy</h3>
             </div>
             <div className="col-md-4">
             </div>
